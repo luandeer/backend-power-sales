@@ -8,9 +8,12 @@ Este proyecto utiliza [NestJS](https://nestjs.com) para crear una API eficiente 
 
 Ejecuta el siguiente comando para instalar todas las dependencias:
 
+crea un archivo en la raiz .env y coloca esto:
+DATABASE_URL="file:./dev.db"
+
 ```bash
 pnpm install
-
+pnpm exec prisma generate
 pnpm prisma migrate dev
 
 
